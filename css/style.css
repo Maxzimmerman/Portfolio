@@ -19,7 +19,7 @@ mouse
 
 .cursor {
     position: fixed;
-    box-shadow: 0px 0px 80px 35px #1da19b;
+    box-shadow: 0px 0px 80px 20px #1da19b;
     pointer-events: none;
     width: 1px;
     height: 1px;
