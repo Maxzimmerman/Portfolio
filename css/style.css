@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(45deg, rgb(0, 0, 0), #1f2833);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*
+mouse
+ */
+
+.cursor {
+    position: fixed;
+    box-shadow: 0px 0px 10px black;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+/*
+fixed content
+*/
+
+.fixed-content-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.fixed-content {
+    position: fixed;
+    display: flex!important;
+    flex-direction: column!important;
+    height: 100vh;
+    margin-top: 7rem;
+    align-content: center;
+}
+
+.fixed-content > .fixed-content-header {
+    margin-bottom: 20em;
+}
+
+.fixed-content > .overview-bar {
+    margin-bottom: 20em;
+}
+
+.fixed-content > .overview-bar > .overview {
+    margin-top: 5px;
+}
+
+.fixed-content > .overview-bar > .overview-item {
+    width: 63px;
+    margin-top: 14px;
+}
+
+.fixed-content > .overview-bar > .overview-item > div {
+    cursor: pointer;
+    background-color: white;
+    width: 10px;
+    height: 1px;
+    position: relative;
+    top: 12px;
+}
+
+.fixed-content > .overview-bar span {
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.fixed-content > .social-icons > i {
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-left: 3px;
+    position: relative!important;
+    top: 10px;
+}
+
+/*
+moving content
+*/
+
+.moving-content-wrapper > .moving-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7rem;
+    margin-right: 5rem!important;
+    margin-bottom: 5rem;
+}
+
+.moving-content-wrapper > .moving-content > #about-content {
+    margin-bottom: 3rem;
+}
+
+.moving-content-wrapper > .moving-content > #project-content {
+    margin-top: 3rem;
+}
+
+.card-own {
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.card-own:hover {
+    background-color: #1f2833;
+}
+
+.technologies {
+    display: flex;
+}
+
+.technologies > div {
+    margin-right: 6px;
+    border-radius: 10px;
+    background-color: #1f2833;
+    padding: 5px;
+    color: #1da19b;
+}
