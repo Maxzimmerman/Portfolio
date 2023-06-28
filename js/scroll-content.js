@@ -12,7 +12,3 @@ const observer = new IntersectionObserver((entries) => {
 const Card = document.querySelectorAll('.hidden');
 Card.forEach((el) => observer.observe(el));
 
-
-$(function () {
-    $('.show').fadeIn(6000)
-})

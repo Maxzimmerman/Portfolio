@@ -23,6 +23,7 @@ body {
     background-attachment: fixed;
     font-family: 'Montserrat', sans-serif;
     height: auto;
+    margin-bottom: 2rem!important;
 }
 
 a {
@@ -41,7 +42,7 @@ a:hover {
     }
 
     * {
-        cursor: none;
+        cursor: none!important;
     }
 }
 
@@ -252,13 +253,12 @@ moving content
     justify-content: center;
 }
 
-.technologies > div {
-    margin-right: 6px;
-    border-radius: 10px;
-    background-color: #1f2833;
-    padding: 5px;
-    color: #1da19b;
-    margin: 2px;
+.technologies .technologie-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .fa-github {

@@ -11,5 +11,5 @@ WebDirectory.addEventListener('click', () => {
 });
 
 Elbigote.addEventListener('click', () => {
-   window.location.href = "https://brittanychiang.com/"
+   window.location.href = "https://github.com/Maxzimmerman/ElBigote"
 });
