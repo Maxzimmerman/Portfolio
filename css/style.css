@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     color: white;
-    cursor: none!important;
+    cursor: auto;
 }
 
 p {
@@ -35,11 +35,17 @@ a:hover {
     color: white!important;
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
     body {
         display: flex;
     }
+
+    * {
+        cursor: none;
+    }
 }
+
+
 
 /*
 mouse
@@ -55,6 +61,13 @@ mouse
     visibility: visible;
     background-color: #1da19b;
     border-radius: 50%;
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .cursor {
+        display: block;
+    }
 }
 
 /*
@@ -78,6 +91,8 @@ hamburger menu
     width: 80%;
     left: 10%;
     padding: 10px;
+    background: linear-gradient(299deg, rgb(0, 0, 0), #1f2833);
+    background-attachment: fixed;
 }
 
 .hamburger-menu-content > i {
@@ -250,14 +265,6 @@ moving content
     cursor: pointer;
 }
 
-.project-card {
-
-}
-
-.show {
-    display: block;
-}
-
 .scroll-up-button-outer {
     width: 50px;
     height: 50px;
@@ -296,3 +303,13 @@ moving content
 .fa-angles-down {
     margin: auto;
 }
+
+.hidden {
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.show {
+    opacity: 1;
+}
+
