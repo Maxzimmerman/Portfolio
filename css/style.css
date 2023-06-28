@@ -93,6 +93,7 @@ hamburger menu
     padding: 10px;
     background: linear-gradient(299deg, rgb(0, 0, 0), #1f2833);
     background-attachment: fixed;
+    z-index: 100;
 }
 
 .hamburger-menu-content > i {
@@ -221,10 +222,18 @@ moving content
 .card-own {
     margin-top: 2rem;
     border-radius: 10px;
-    padding: 20px;
+    padding: 35px;
     width: 90%;
     margin: auto;
     margin-top: 7rem;
+}
+
+.card-own img {
+    width: 130px;
+    height: 80px;
+    border-radius: 10px;
+    position: relative;
+    top: -20px;
 }
 
 .card-own a {
@@ -275,6 +284,19 @@ moving content
     right: 10px;
 }
 
+.fa-angles-down {
+    margin: auto;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.show {
+    opacity: 1;
+}
+
 @media screen and (min-width: 1280px){
 
     .moving-content-wrapper > .moving-content {
@@ -298,18 +320,5 @@ moving content
         text-align: left;
         margin-top: 7rem;
     }
-}
-
-.fa-angles-down {
-    margin: auto;
-}
-
-.hidden {
-    opacity: 0;
-    transition: opacity 3s;
-}
-
-.show {
-    opacity: 1;
 }
 
