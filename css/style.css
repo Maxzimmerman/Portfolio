@@ -168,7 +168,7 @@ fixed content
     }
 
     .fixed-content > .overview-bar {
-        margin-bottom: 20em;
+        margin-bottom: 10em;
         display: block;
     }
 
@@ -251,7 +251,7 @@ moving content
 }
 
 .project-card {
-    display: none;
+
 }
 
 .show {
