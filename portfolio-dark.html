@@ -4,17 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <title>Max's Portfolio</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!--own styles-->
+
         <link rel="stylesheet" href="css/style.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Chango&family=Dosis:wght@300&family=Inter&family=Montserrat&family=Rubik:ital@1&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <link rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-              integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-              crossorigin="anonymous"
-              referrerpolicy="no-referrer" />
+
+
+        <!--font awesome css-->
+
+        <link rel="stylesheet" href="css/font-awesome/css/all.min.css"/>
+        <link rel="stylesheet" href="css/font-awesome/css/fontawesome.min.css">
+
+        <!--bootstrap-->
+
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css/">
+
     </head>
     <body>
         <div class="cursor"></div>
@@ -28,8 +32,8 @@
             <div class="fixed-content">
                 <div class="fixed-content-header">
                     <h1>Max Zimmermann</h1>
-                    <h5>Fullstack developer at Baseworks</h5>
-                    <p>I build accessible, inclusive products and digital experiences for the web.</p>
+                    <h5>Fullstack developer</h5>
+                    <p>I build modern, user-friendly, functional web applications.</p>
                 </div>
                 <div class="overview-bar">
                     <a href="#about-content"><div class="overview-about overview-item"><div class="overview-item-about about-overview overview"></div><span class="overview-link-about">About</span></div></a>
@@ -47,16 +51,19 @@
         <div class="moving-content-wrapper">
             <div class="moving-content col-12 col-xl-6  col-xxl-6">
                 <div id="about-content">
-                    <p>I'm a 18 year old Fullstack developer at Frankfurt. Currently I'm going to school, besides that I'm working half time as fullstack developer.</p>
+                    <p>I'm a student in Germany, working part time with a web-development company. </p>
                 </div>
 
 
                 <div id="experience-content">
                     <div class="card-own hidden lead-enginner">
-                        <h5>High school student</h5>
+                        <h5>Werner-von-Siemens-Schule</h5>
                         <p>
-                            I'm currently in my first of 2 years Werner-von-Siemens school experience.<br>
-                            I already Learned topics like: C# as well as basic knowledge. I'm really looking forward to my graduate in 2024
+                            I am currently a Fachoberschüler student, where I have been learning and working with:
+                            C#
+
+                            As a part of this journey I did a 1 year Praktikum at Baseworks where a learned how to build an
+                            design modern web applications
                         </p>
                     </div>
                 </div>
@@ -65,12 +72,11 @@
                 <div id="project-content">
                     <div class="card-own project-card hidden todoapp">
                         <div class="project-card-content">
-                            <img src="images/2_e822dae0-14df-4cb8-b145-ea4dc0966b34.png">
+                            <img src="images/2_e822dae0-14df-4cb8-b145-ea4dc0966b34.jpg">
                             <div>
                                <h5 class="link-project">Todo <i class="fa-brands fa-github project-git-link-todoapp project-git-link"></i> <a href="https://elbigote.de/"><i class="fa-solid fa-link link-project"></i></a> </h5>
                                 <p>
-                                    This a Website is designed for users who want to have a place in which they can store their daily todos as well as plan their projects.
-                                    Besides that the Website provides an admin panel on which the user can track their habits to improve their work
+                                    This is a task management app prototype with the following features: store todos and track activiti in order to optimize the workflow
                                 </p>
                             </div>
                         </div>
@@ -88,7 +94,7 @@
                     <div class="card-own project-card hidden webdirectory">
                         <div>
                             <div class="project-card-content">
-                                <img src="images/diy-product-photography.png">
+                                <img src="images/diy-product-photography%20(1).jpg">
                                 <div>
                                     <h5 class="link-project">Webdirectory <i class="fa-brands fa-github project-git-link-webdirectory project-git-link"></i> <a href="https://elbigote.de/"><i class="fa-solid fa-link link-project"></i></a></h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad assumenda, commodi doloremque dolorum
@@ -109,11 +115,11 @@
                     <div class="card-own hidden project-card elbigote">
                         <div>
                             <div class="project-card-content">
-                                <img src="images/elbigote-background.png">
+                                <img src="images/elbigote-background%20(1).jpg">
                                 <div>
                                     <h5>Elbigote <i class="fa-brands fa-github project-git-link-elbigote project-git-link"></i> <a href="https://elbigote.de/"><i class="fa-solid fa-link link-project"></i></a></h5>
                                     <p>
-                                        This Website was made for a restaurant, who wanted a modern looking site on which a guest can easily order a table
+                                        This is a restaurant landing page for a client, that features modern design elements, a menu-plugin, and the ability to book a table through the site.
                                     </p>
                                 </div>
                             </div>
@@ -126,29 +132,10 @@
                         </div>
                     </div>
 
-                    <div class="card-own hidden project-card elbigote">
-                        <div>
-                            <div class="project-card-content">
-                                <img src="images/elbigote-background.png">
-                                <div>
-                                    <h5>Elbigote <i class="fa-brands fa-github project-git-link-elbigote project-git-link"></i> <a href="https://elbigote.de/"><i class="fa-solid fa-link link-project"></i></a></h5>
-                                    <p>
-                                        This Website was made for a restaurant, who wanted a modern looking site on which a guest can easily order a table
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="technologies">
-                                <div><img class="technologie-logo front" src="images/css-logo.svg"></div>
-                                <div><img class="technologie-logo" src="images/html-logo.png"></div>
-                                <div><img class="technologie-logo" src="images/javascript-logo.png"></div>
-                                <div><img class="technologie-logo" src="images/sass-logo.png"></div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         <span class="scroll-up-button-outer"><i class="fa-solid fa-arrow-up scroll-up-button"></i></span>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="js/fixed-content.js"></script>
         <script src="js/moving-content.js"></script>
         <script src="js/mouse-effect.js"></script>
