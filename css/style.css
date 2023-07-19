@@ -6,6 +6,7 @@
 
 p {
     word-break: break-all;
+    font-size: 19px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -170,6 +171,22 @@ fixed content
     top: 10px;
 }
 
+.max-header {
+    font-size: 32px;
+}
+
+.about-me-text {
+    font-size: 20px;
+}
+
+.project-text {
+    font-size: 16px;
+}
+
+.school-text {
+
+}
+
 @media screen and (min-width: 1280px) and (max-width: 3000px){
 
     .fixed-content {
@@ -221,7 +238,7 @@ moving content
 .card-own {
     margin-top: 2rem;
     border-radius: 10px;
-    padding: 35px;
+    padding: 15px;
     width: 90%;
     margin: auto;
     margin-top: 7rem;
