@@ -17,24 +17,25 @@ html {
     height: 100%;
     margin-right: 9px;
     margin-left: 9px;
+    scroll-behavior: smooth;
 }
 
 body {
     background: linear-gradient(299deg, rgb(0, 0, 0), #1f2833);
     background-attachment: fixed;
-    font-family: 'basic', sans-serif!important;
+    font-family: 'basic', sans-serif !important;
     height: auto;
-    margin-bottom: 2rem!important;
+    margin-bottom: 2rem !important;
 }
 
 a {
-    text-decoration: none!important;
+    text-decoration: none !important;
     color: white !important;
 }
 
 a:active,
 a:hover {
-    color: white!important;
+    color: white !important;
 }
 
 @media screen and (min-width: 1280px) {
@@ -43,7 +44,7 @@ a:hover {
     }
 
     * {
-        cursor: none!important;
+        cursor: none !important;
     }
 }
 
@@ -98,13 +99,13 @@ hamburger menu
 
 .hamburger-menu-content > i {
     text-decoration: none;
-    color: white!important;
+    color: white !important;
     margin: 10px;
 }
 
 @media screen and (min-width: 1280px) {
     .hamburger-menu {
-        display: none!important;
+        display: none !important;
     }
 }
 
@@ -118,8 +119,8 @@ fixed content
 }
 
 .fixed-content {
-    display: flex!important;
-    flex-direction: column!important;
+    display: flex !important;
+    flex-direction: column !important;
     height: 40vh;
     margin-top: 8rem;
 }
@@ -167,7 +168,7 @@ fixed content
     cursor: pointer;
     margin-left: 0px;
     margin: 20px;
-    position: relative!important;
+    position: relative !important;
     top: 10px;
 }
 
@@ -187,7 +188,7 @@ fixed content
 
 }
 
-@media screen and (min-width: 1280px) and (max-width: 3000px){
+@media screen and (min-width: 1280px) and (max-width: 3000px) {
 
     .fixed-content {
         margin-top: 7rem;
@@ -238,7 +239,7 @@ moving content
 .card-own {
     margin-top: 2rem;
     border-radius: 10px;
-    padding: 15px;
+    padding: 35px;
     width: 90%;
     margin: auto;
     margin-top: 7rem;
@@ -281,22 +282,25 @@ moving content
 }
 
 .scroll-up-button {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    border-radius: 50%;
     font-size: 25px;
     color: #1da19b;
-    position: relative;
-    left: 28%;
-    top: 25%;
-    cursor: pointer;
+    display: grid;
+    place-items: center;
 }
 
 .scroll-up-button-outer {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 3px solid #1da19b;
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     right: 10px;
+    width: 70px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
 }
 
 .fa-angles-down {
@@ -312,11 +316,11 @@ moving content
     opacity: 1;
 }
 
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
 
     .moving-content-wrapper > .moving-content {
         margin-top: 25rem;
-        margin-right: 5rem!important;
+        margin-right: 5rem !important;
         margin-bottom: 5rem;
     }
 

@@ -1,15 +1,23 @@
-$(function () {
-    $('.scroll-up-button-outer').hide(0);
-    $(window).on('scroll', function () {
-        const scrolled = window.scrollY;
+let calcScrollValue = () => {
+    let scrollProgress = document.querySelector(".scroll-up-button-outer");
+    let progressValue = document.querySelector('.scroll-up-button');
 
-        if(Math.ceil(scrolled !== 0)) {
-            $('.scroll-up-button-outer').show(100)
-        }else{
-            $('.scroll-up-button-outer').hide(100)
-        }
+    let pos = document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100)/calcHeight);
+
+    if(pos>100) {
+        scrollProgress.style.display = "grid"
+    } else {
+        scrollProgress.style.display = "none";
+    }
+
+    scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
     })
-    $('.scroll-up-button').on('click', function () {
-        $(window).scrollTop(1);
-    });
-})
+
+    scrollProgress.style.background = `conic-gradient(#03cc65) ${scrollValue}%, #d7d7d7 ${scrollValue}`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue
