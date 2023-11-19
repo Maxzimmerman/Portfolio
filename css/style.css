@@ -5,8 +5,8 @@
 }
 
 p {
-    word-break: break-all;
-    font-size: 19px;
+    font-size: 17px;
+    color: #E1D9D1;
 }
 
 h1, h2, h3, h4, h5 {
@@ -178,6 +178,7 @@ fixed content
 
 .about-me-text {
     font-size: 20px;
+    color: white;
 }
 
 .project-text {
@@ -185,7 +186,8 @@ fixed content
 }
 
 .school-text {
-
+    word-break: keep-all;
+    text-wrap: balance;
 }
 
 @media screen and (min-width: 1280px) and (max-width: 3000px) {

@@ -29,9 +29,9 @@
         <div class="cursor"></div>
         <i class="fa-solid fa-bars hamburger-menu"></i>
         <div class="hamburger-menu-content">
-            <a href="#about-content">About</a>
-            <a href="#experience-content">Experience</a>
-            <a href="#project-content">Projects</a>
+            <a class="about-me-link" href="#about-content">About</a>
+            <a class="experience-link" href="#experience-content">Experience</a>
+            <a class="project-link" href="#project-content">Projects</a>
         </div>
         <div class="fixed-content-wrapper col-12 col-xl-6 col-xxl-6">
             <div class="fixed-content">
@@ -55,12 +55,12 @@
 
         <div class="moving-content-wrapper ">
             <div class="moving-content col-12 col-xl-6  col-xxl-6">
-                <div id="about-content">
+                <div id="about-content" class="section about">
                     <p class="about-me-text">I'm a student in Germany, working part time with a web-development company. </p>
                 </div>
 
 
-                <div id="experience-content">
+                <div id="experience-content" class="section experience">
                     <div class="card-own hidden lead-enginner">
                         <h5>Werner-von-Siemens-Schule</h5>
                         <p class="school-text">
@@ -76,7 +76,28 @@
                 </div>
 
 
-                <div id="project-content">
+                <div id="project-content" class="section project">
+
+<!--                    <div class="card-own hidden project-card elbigote">-->
+<!--                        <div>-->
+<!--                            <div class="project-card-content">-->
+<!--                                <img src="images/kua_website.png">-->
+<!--                                <div>-->
+<!--                                    <h5>Klein und Architekten <i class="fa-brands fa-github project-git-link-elbigote project-git-link"></i> <a href="https://elbigote.de/"><i class="fa-solid fa-link link-project"></i></a></h5>-->
+<!--                                    <p class="project-text">-->
+<!--                                        A Website for an architect office in Frankfurt am Main  </p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="technologies">-->
+<!--                                <div><img class="technologie-logo" src="images/django-logo.png"></div>-->
+<!--                                <div><img class="technologie-logo" src="images/python-logo.png"></div>-->
+<!--                                <div><img class="technologie-logo" src="images/css-logo.svg"></div>-->
+<!--                                <div><img class="technologie-logo" src="images/html-logo.png"></div>-->
+<!--                                <div><img class="technologie-logo" src="images/javascript-logo.png"></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
                     <div class="card-own project-card hidden todoapp">
                         <div class="project-card-content">
                             <img src="images/todoapp.jpg">
@@ -144,5 +165,6 @@
         <script src="js/scroll-button.js"></script>
         <script src="js/hamburger-menu.js"></script>
         <script src="js/scroll-content.js"></script>
+        <script src="js/link-active.js"></script>
     </body>
 </html>
