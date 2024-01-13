@@ -14,7 +14,7 @@ function submitForm(event) {
             Password: "0AF343E9BDCC7BDF44785F9EF673F216907A",
             To: 'maxw.zim@gmail.com',
             From: fromAddress,
-            Subject: `von ${email.value}: ${subject.value}`,
+            Subject: `${subject.value} von: ${email.value}`,
             Body: text.value
-        }).then(message => alert(message));
+        });
     }
