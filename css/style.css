@@ -343,3 +343,64 @@ moving content
     }
 }
 
+/* Contact form */
+
+.contact-form-holder {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#contact-form, #comment-form {
+  width: 100%;
+  float: left;
+  margin-top: 30px;
+}
+
+#contact-form input[type="text"], #contact-form textarea, #comment-form input[type="text"], #comment-form textarea {
+  float: left;
+  width: 100%;
+  background: none;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  height: 50px;
+  border-radius: none;
+  position: relative;
+  z-index: 20;
+  padding-left: 8px;
+  color: #999;
+  border: 0;
+  border-bottom: 1px solid white;
+  -webkit-appearance: none;
+}
+
+#contact-form textarea, #comment-form textarea {
+  height: 170px;
+  resize: none;
+  overflow: auto;
+  background: none;
+  overflow: auto;
+  box-shadow: none;
+}
+
+.verify-wrap {
+  float: left;
+  width: 100%;
+  margin: 15px 0;
+}
+
+#submit, .form-submit button {
+    float: left;
+    border: 2px solid white;
+    background: none;
+    padding: 15px 30px 15px 30px;
+    line-height: 17px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 12px;
+    color: white;
+    font-family: 'Muli',sans-serif;
+    transition: all 200ms linear;
+    -webkit-appearance: none;
+}
