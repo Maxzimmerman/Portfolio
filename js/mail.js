@@ -16,5 +16,8 @@ function submitForm(event) {
             From: fromAddress,
             Subject: `${subject.value} von: ${email.value}`,
             Body: text.value
+        }).then(function (message) {
+            // Reload the page after sending the email
+            window.location.reload();
         });
     }
