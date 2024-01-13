@@ -166,14 +166,16 @@
         <div class="contact-form-holder mb-3">
             <div id="contact-form">
                 <div id="message"></div>
-                <form method="post" action="">
+                <form method="post" action="" class="form" onsubmit="submitForm(event)">
                     <input name="name" type="text" id="name" placeholder="Name">
                     <input name="email" type="text" id="email" placeholder="Email">
                     <input type="text" name="subject" id="subject" placeholder="Subject"/>
                     <input type="text" name="phone" id="phone" placeholder="Phone"/>
                     <textarea name="message" id="comments" placeholder="Message"></textarea>
                     <button type="submit" id="submit" data-top-bottom="transform: translateY(-50px);"
-                            data-bottom-top="transform: translateY(50px);"><span>Send Message </span></button>
+                            data-bottom-top="transform: translateY(50px);">
+                        <span>Send Message </span>
+                    </button>
                 </form>
             </div>
         </div>
@@ -189,5 +191,7 @@
         <script src="js/scroll-button.js"></script>
         <script src="js/hamburger-menu.js"></script>
         <script src="js/scroll-content.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="js/mail.js"></script>
 </body>
 </html>
