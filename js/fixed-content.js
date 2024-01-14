@@ -46,4 +46,20 @@ $(function () {
             marginLeft: "12px"
         }, 100)
     })
+
+    $(".overview-contact").hover(function () {
+        $(".overview-item-contact").animate({
+            width: "40px"
+        }, 100)
+        $(".overview-link-contact").animate({
+            marginLeft: "50px"
+        }, 100)
+    }, function () {
+        $(".overview-item-contact").animate({
+            width: "10px"
+        }, 100)
+        $(".overview-link-contact").animate({
+            marginLeft: "12px"
+        }, 100)
+    })
 })
